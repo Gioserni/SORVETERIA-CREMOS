@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet" type="text/css" href="style2.css" />
+    <title>CREMOS | Delivery</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <a href="index.html">
+            <img src="imagens/LOGO-semfundo.png">
+        </a>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="cardapio1.html">Cardápio</a></li>
+                <li><a href="/">Unidades</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+                <li><a href="/">Sobre</a></li>
+                <li><a href='reserve.html' class="botao-delivery">Reserve</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="titulo-delivery">
+        <h3 style="margin-top: 50px;">PEÇA DA UNIDADE MAIS PRÓXIMA DE VOCÊ</h3>
+
+    </section>
+
+
+    <section class="delivery-zero">
+
+        <form class="delivery" method="post">
+
+            <div class="field">
+                <label for="nome">SELECIONE O PRODUTO:</label>
+                <select name="produtos-da-loja" style="
+    width: 100%;
+    padding-left: 10px;
+    height: 45px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 3px solid #4E4741;
+    outline: none;
+    background: #F8F4DB;">
+                    <option value="pot">Pote</option>
+                    <option value="casq">Casquinha</option>
+                    <option value="picl">Picolé</option>
+                    <option value="comp">Complementos</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="nome">BAIRRO:</label>
+                <input type="text" id="bairro" name="bairro" placeholder="Digite a Unidade*" required>
+            </div>
+
+            <div class="field">
+                <label for="nome">ENDEREÇO:</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Endereço ou CEP" required>
+            </div>
+
+            <div class="field">
+                <label for="residencia">NÚMERO:</label>
+                <input type="number" name="número da residência" min="1999" max="200">
+            </div>
+            <input type="submit" name="acao" value="Fazer Pedido">
+        </form>
+
+    </section>
+
+
+    <section class="Footer">
+        <div class="logo-footer">
+            <center>
+                <img src="imagens/LOGO-semfundo.png">
+                “O sorvete da CREMOS faz o mundo melhor.”
+            </center>
+        </div>
+        <div class="footer2">
+            <h5>INSTITUCIONAL</h5>
+
+            <nav class="footer2-1">
+                <a href="">HISTÓRIA</a>
+                <a href="">ORIGENS</a>
+                <a href="">EVENTOS</a>
+            </nav>
+        </div>
+
+        <div class="footer3">
+            <h5>PRODUTOS</h5>
+
+            <nav class="footer3-1">
+                <a href="">POTES</a>
+                <a href="">CASQUINHAS</a>
+                <a href="">PICOLÉ</a>
+                <a href="">COMPLEMENTOS</a>
+            </nav>
+        </div>
+
+        <div class="footer4">
+            <h5>CONTATO</h5>
+
+            <nav class="footer4-1">
+                <a href="">FALE CONOSCO</a>
+                <a href="">POLITICA DE PRIVACIDADE</a>
+                <a href="">TERMOS DE USO</a>
+                <a href="">TRABALHE CONOSCO</a>
+            </nav>
+        </div>
+
+    </section>
+
+
+    <section class="redes">
+
+        <div class="redes-esquerda">
+            <h6>CREMOS 2022</h6>
+
+        </div>
+
+        <div class="redes-sociais">
+            <div class="Twitter">
+                <img src="imagens/rede-twitter.png">
+            </div>
+
+            <div class="Facebook">
+                <img src="imagens/rede-facebook.png">
+            </div>
+
+            <div class="Instagram">
+                <img src="imagens/rede-insta.png">
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

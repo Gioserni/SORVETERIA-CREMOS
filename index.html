@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+
+
+    <link href="style.css" rel="stylesheet" type="text/css" href="style2.css" />
+    <title>CREMOS | Home</title>
+
+</head>
+
+<body>
+    <header class="header">
+
+        <a href="index.html">
+            <img src="imagens/LOGO-semfundo.png" alt="">
+        </a>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="cardapio1.html">Cardápio</a></li>
+                <li><a href="#uni1">Unidades</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+                <li><a href="#sobre-nos">Sobre</a></li>
+                <li><a href="#reserve" class="botao-cta">Reserve</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="slider">
+        <div id="carousel-sorvetes" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-sorvetes" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-sorvetes" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-sorvetes" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel-sorvetes" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagens/slide1.png">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/slide2.png">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/slide3.png">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/slide-4.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="unidades">
+        <div class="uni1"></div>
+        <div class="uni2"></div>
+        <div class="uni3"></div>
+    </section>
+
+    <section class=produtos>
+        <div class="s1 sorvete">
+            <h2>POTES</h2>
+            <h4>Conheça +</h4>
+        </div>
+
+        <div class="s2 sorvete">
+            <h2>CASQUINHA</h2>
+            <h4>Conheça +</h4>
+        </div>
+
+        <div class="s3 sorvete">
+            <h2>PICOLÉ</h2>
+            <h4>Conheça +</h4>
+        </div>
+
+        <div class="s4 sorvete">
+            <h2>COMPLEMENTOS</h2>
+            <h4>Conheça +</h4>
+        </div>
+    </section>
+
+  <section class="grid-local-sobre">
+    <section class="Foto-e-Sobre">
+      <div class="foto-do-local"></div>
+
+        <div class="sobre-nos">
+            <h3 style="margin-top: 50px;">SOBRE NÓS</h3>
+          <div class="texto-sobre">
+            <p>A CREMOS surgiu da paixão Holandesa por fazer <br/>gelato e o desejo de dividi-lo com omundo.</p>
+
+      <p>As irmãs Sasah, Gigi e Bibi mergulharam nos segredo <br/>das tradicionais receitas de gelatos holadeses e <br/>descobriram as mais incríveis matérias-primas pelo caminho.</p>
+
+        <p>Respeitando as antigas tradições dessa maravilhosa <br/>arte, sem deixar de inovar, produzimos nossos gelatos <br/>com os ingredientes da melhor qualidade, buscando <br/>as opções mais saudáveis.</p>
+
+        <p>Esse é o nosso segredo. O segredo de nosso gelato, para você.</p>
+                  </div>   
+            </div>
+
+        </section>
+    </section>
+
+    <section class="Reserve-e-Descricao">
+        <div class="reserve">
+            <center>
+                <h3 style="margin-top: 50px;"> RESERVE </h3>
+            </center>
+            <center>
+                <form class="formulario" method="post">
+
+                    <div class="field">
+                        <label for="nome">UNIDADES:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite a Unidade*" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="telefone">PESSOAS:</label>
+                        <input type="number" name="quantidade-de-pessoas" placeholder="Escolha a quantidade de pessoas"
+                            min="1" min="1" ax="5">
+                    </div>
+
+                    <div class="field">
+                        <label for="mensagem">DATA E HORA:</label>
+                        <input type="datetime-local" name="data-e-horário">
+                    </div>
+
+                    <div class="field">
+                        <label for="email">E-MAIL:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+                    </div>
+
+                    <input type="submit" name="acao" value="RESERVAR">
+                </form>
+        </div>
+        </center>
+
+
+        <div class="descricao">
+            <center>
+            <h3 style="margin-top: 50px;">DESCRIÇÃO</h3>
+          
+            <div class="texto-descricao"><p>Na sorveteria basta apresentar o QR CODE ou <br/> Código de Reserva enviados por email que um de <br/> nossos atendentes o encaminhara a mesa reservada.</p>
+
+            <p>No final da visita não se esqueça de avaliar a estadia. </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="Apresentacao">
+        <div class="vegano">
+            <img src="imagens/vegano.png">
+
+            <h1 style="margin-top: 50px;">VEGANO</h1>
+                <p>Nós somos 100% veganos, mas
+                vocês não precisam ser.</p>
+        </div>
+
+        <div class="sustentavel">
+            <img src="imagens/sustentavel.png">
+
+            <h1 style="margin-top: 50px;">SUSTENTÁVEL</h1>
+               <p> Ingredientes sustentáveis
+                e embalagens reciclaveis.</p>
+        </div>
+
+        <div class="super-saboroso">
+            <img src="imagens/super-saboroso.png">
+
+            <h1 style="margin-top: 50px;">SUPER SABOROSO</h1>
+                <p>Sabores frescos criados
+                pela chef Rihanna.</p>
+        </div>
+
+    </section>
+
+    <section class="Footer">
+        <div class="logo-footer">
+            <center>
+                <img src="imagens/LOGO-semfundo.png">
+                “O sorvete da CREMOS faz o mundo melhor.”
+            </center>
+        </div>
+        <div class="footer2">
+            <h5 style="margin-top: 50px;">INSTITUCIONAL</h5>
+
+            <nav class="footer2-1">
+                <a href="">HISTÓRIA</a>
+                <a href="">ORIGENS</a>
+                <a href="">EVENTOS</a>
+            </nav>
+        </div>
+
+        <div class="footer3">
+            <h5 style="margin-top: 50px;">PRODUTOS</h5>
+
+            <nav class="footer3-1">
+                <a href="">POTES</a>
+                <a href="">CASQUINHAS</a>
+                <a href="">PICOLÉ</a>
+                <a href="">COMPLEMENTOS</a>
+            </nav>
+        </div>
+
+        <div class="footer4">
+            <h5 style="margin-top: 50px;">CONTATO</h5>
+
+            <nav class="footer4-1">
+                <a href="">FALE CONOSCO</a>
+                <a href="">POLITICA DE PRIVACIDADE</a>
+                <a href="">TERMOS DE USO</a>
+                 <a href="">TRABALHE CONOSCO</a>
+            </nav>
+        </div>
+    
+    </section>
+
+    <section class="redes">
+
+        <div class="redes-esquerda">
+                <h6 style="margin-left:20px;">CREMOS 2022</h6>
+            
+        </div>
+
+        <div class="redes-sociais">
+                <div class="Twitter">
+                    <img src="imagens/rede-twitter.png"> 
+                </div>
+
+                <div class="Facebook">
+                    <img src="imagens/rede-facebook.png"> 
+                </div>
+
+                <div class="Instagram">
+                    <img src="imagens/rede-insta.png"> 
+                </div>
+        </div>
+        
+    </section>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>

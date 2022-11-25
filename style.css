@@ -1,0 +1,620 @@
+html, body, ul, li{
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: 'Nunito';
+    background: #EFDAB2;
+}
+
+
+h2 {
+  font-size: 32px;
+  text-align: center;
+  color: #F8F4DB;
+}
+
+h3 {
+  font-size: 35px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+  color: #F1E4CF;
+}
+
+a {
+text-decoration: none; 
+color: #493434;
+}
+
+a:hover {
+opacity: 100%;  
+}
+
+.botao-cta {
+    background: #7590C6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #F8F4DB;
+}
+
+img {
+  /* max-width: 200px; */
+  display: block;
+}
+
+img.banner {
+  width: 100%;
+}
+
+.header {
+    background: #EFDAB2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+    .menu{
+        display: flex;
+        background: #EFDAB2;
+}
+
+    .menu li {
+        margin-left: 10px;
+        background: #EFDAB2;}
+
+    .menu li a {
+        display: block;
+        padding: 10px;
+}
+
+.slider {
+  
+/*   overflow: hidden;
+  background:#EFDAB2;
+  box-sizing: border-box; */
+}
+
+.flex div{
+flex: 1 1 200px;
+margin: 0px;
+}
+
+
+
+.unidades {
+  background: #F8F4DB;
+  align-items: center;
+  grid-row: 2;
+  height: 70vh;
+  color: #493434;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+    .uni1 {
+  background-image: url("unidades/higienopolis.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px;
+  border-radius: 200px;
+}
+
+    .uni2 {
+  background-image: url("unidades/tatuape.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px;
+  border-radius: 200px;
+}
+
+    .uni3 {
+  background-image: url("unidades/pinheiros.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px;
+  border-radius: 200px;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 80vh;
+  grid-row: 3;
+}
+
+    .sorvete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+        .s1 {
+  background-image: url("imagens/sorvetinho-mais-escuro.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+        .s2 {
+  background-image: url("imagens/casquinha-mais-escura.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+        .s3 {
+  background-image: url("imagens/picoles-mais-escuros.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+        .s4 {
+  background-image: url("imagens/casquinhas-mais-escura.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*.grid-local-sobre {
+    display: grid;
+    grid-template-columns: 100fr 100fr;
+}*/
+
+.Foto-e-Sobre {
+    display: grid;
+    grid-template-columns: 100fr 100fr;
+}
+
+    .foto-do-local {
+        background: url("imagens/local.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 816px;
+    }
+    .sobre-nos {
+        background: #493434;
+        color: white;
+        width: 100%;
+        height: 816px;
+        font-size: 20px;
+        align-content: center;
+}
+
+    .texto-sobre {
+      width: 100%;
+      height: 890px;
+      justify-content: center;
+      text-align: left;
+      align-content: center;
+      margin: 180px;
+}
+
+.Reserve-e-Descricao {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 100fr 100fr;
+    
+    }
+    .reserve {
+        background: #F8F4DB;
+        color: #493434;
+        width: 100%;
+        height: 816px;
+        align-items: center;
+    }
+    .descricao {
+        background: #EFDAB2;
+        color: #493434;
+        width: 100%;
+        height: 816px;
+        text-align: left;
+        font-size: 20px;
+}
+
+      .texto-descricao{
+          width: 100%;
+          height: 890px;
+          justify-content: center;
+          text-align: left;
+          align-content: center;
+          margin: 220px;
+}
+
+.formulario{
+    display: grid;
+    width: 400px;
+    padding: 30px;
+    border:1px solid #F8F4DB;
+    align-content: center;
+    }
+
+    .field{
+    width: 100%;
+    margin: 15px 0;
+}
+
+        .field label, 
+        .field span{
+    padding-left: 10px;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    text-align: left;
+        
+}
+        .radiobox label{
+    width: auto;
+    display: inline-block;
+    text-align: left;
+}
+    input[type=text],
+    input[type=number],
+    input[type=email],
+    input[type=datetime-local],
+
+    textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 40px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 3px solid #4E4741;
+    outline: none;
+    background: #F8F4DB;
+}
+
+    input#nao{
+    margin-left: 30px;
+}
+    textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+    input[type=submit]{
+    display: block;
+    background-color: #493434;
+    color: #F8F4DB;
+    height: 40px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+    .botao-delivery {
+    background: #7590C6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #F8F4DB;
+}
+
+
+    .delivery-zero {
+        background: #EFDAB2;
+        display: grid;
+        width: 700px;
+        padding: 100px;
+        border:1px solid #EFDAB2;
+        align-content: center;
+        grid-template-columns: 50fr;
+}
+
+.titulo-delivery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    font-size: 32px;
+    color: #493434;
+}
+
+
+
+.Apresentacao {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 25fr  25fr 25fr;
+    text-align: center;
+}
+    .vegano {
+        background: #7490C6 ;
+        color: #2C2622;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 25fr 50fr;
+        text-align: left;
+    }
+        .vegano p{
+  grid-column: 2/3;
+}
+
+    .sustentavel {
+        background: #EFDAB2 ;
+        color: #2C2622;
+        display: grid;
+        grid-template-columns: 25fr 50fr;
+        align-items: center;
+        text-align: left;
+    }
+        .sustentavel p{
+  grid-column: 2/3;
+}
+
+    .super-saboroso {
+        background: #F1E4CF ;
+        color: #2C2622;
+        display: grid;
+        grid-template-columns: 25fr 50fr;
+        align-items: center;
+        text-align: left;
+}
+        .super-saboroso p{
+  grid-column: 2/3;
+}
+
+
+.Footer {
+    display: grid;
+    background: #F8F4DB;
+    grid-template-columns: 20fr 10fr 10fr 10fr;
+    height: 40vh;
+    font-size: 18px;
+}
+
+    .logo-footer {
+    display: grid;
+    align-items: center;
+       
+}
+
+        .footer2 {
+        display: grid;
+        margin-left: 1rem!important;
+        color: #2C2622;
+        justify-content: left;
+}
+
+        .footer2-1 {
+        display: grid;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        font-size: 16px;
+}
+
+        .footer3 {
+        display: grid;
+        margin-left: 1rem!important;
+        color: #2C2622;
+        justify-content: left;
+        }
+        
+        .footer3-1 {
+        display: grid;
+        padding-left: 0;
+         margin-bottom: 0;
+        list-style: none;
+        font-size: 16px;
+        }
+
+        .footer4 {
+        display: grid;
+        margin-left: 1rem!important;
+        color: #2C2622;
+        justify-content: left;
+        }
+        
+        .footer4-1 {
+        display: grid;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        font-size: 16px;
+}
+
+
+
+.redes {
+    background: #F8F4DB;
+    display: grid;
+    grid-template-columns: 90fr 16fr;
+    height: 10vh;
+}
+
+    .redes-esquerda {
+        font-size: 20px;
+        color: #2C2622;
+        align-items: ;
+        align-content: center;
+}
+
+
+    .redes-sociais {
+        display: grid;
+        justify-content: right;
+        align-content: center;
+        align-items: center;
+        list-style: none;
+        grid-template-columns: 10fr 10fr 10fr;    
+}
+
+
+
+
+.filtros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+    .sabores {
+    display: grid;
+    grid-template-columns: 25fr 25fr 25fr 25fr;
+    margin-left: 70px;
+    grid-gap: 20px;
+    text-align: left;
+    font-size: 15px;
+    color: #2C2622;
+}
+
+        .sabor1 {
+        background: #F8F4DB;
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
+    
+        .sabor2 {
+        background: #F8F4DB;
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
+    
+        .sabor3 {
+        background: #F8F4DB;
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
+    
+        .sabor4 {
+        background: #F8F4DB;
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
+    
+        .sabor5 {
+        background: #F8F4DB;
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
+    
+        .sabor6 {
+        background: #F8F4DB;
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
+    
+        .sabor7 {
+        background: #F8F4DB;
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
+    
+        .sabor8 {
+        background: #F8F4DB;
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
+        
+        .sabor9 {
+        background: #F8F4DB;
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
+    
+        .sabor10 {
+        background: #F8F4DB;
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
+    
+        .sabor11 {
+        background: #F8F4DB;
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
+    
+        .sabor12 {
+        background: #F8F4DB;
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
+
+        .sabor13 {
+        background: #F8F4DB;
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
+
+        .sabor14 {
+        background: #F8F4DB;
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
+
+        .sabor15 {
+        background: #F8F4DB;
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
+
+        .sabor16 {
+        background: #F8F4DB;
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+       margin: 20px;
+}
+
+
+
+
+
+    .sabores-1 {
+    display: grid;
+    grid-template-columns: 25fr 25fr 25fr;
+    margin: 100px;
+    margin-left: 250px;
+    grid-gap: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #2C2622;
+    align-items: center;
+}
+
+        .saborx {
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
+    
+        .sabory {
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
+    
+        .saborz {
+        width: 354px;
+        height: 494px;
+        border-radius: 20px;
+}
